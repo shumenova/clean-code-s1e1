@@ -5,44 +5,48 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="body">
   <div class="wrapper">
-    <img src="./eisenhower-matrix.jpg"><a class="info-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <img class="wrapper--img" src="./eisenhower-matrix.jpg"><a class="info-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
   <div class="wrapper-actions">
-    <p id="title-actions"><label for="new-task">Add Item</label>
+    <p id="title-wrapper-actions" class="wrapper-actions--label wrapper-actions--label__new">
+      <label for="new-task">Add Item</label>
       <div class="text-container">
-        <input id="new-task"class="task" type="text">
-        <button>Add</button>
+        <input id="new-task" class="wrapper-actions--input wrapper-actions--input__new wrapper-actions--item" type="text">
+        <button class="button">Add</button>
       </div>
     </p>
-    <h3>Todo</h3>
-    <ul id="incomplete-tasks">
-      <li>
-        <input type="checkbox"><label class="task">Pay Bills</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
-          <img src="./remove.svg">
+    <h3 class="tasks-header">Todo</h3>
+    <ul id="tasks" class="task-list">
+      <li class="task-list--item">
+        <input type="checkbox" class="wrapper-actions--checkbox">
+        <label class="wrapper-actions--label wrapper-actions--item">Pay Bills</label>
+        <input type="text" class="wrapper-actions--input wrapper-actions--item">
+        <button class="button button__edit">Edit</button>
+        <button class="button button__delete">
+          <img class="button--img" src="./remove.svg">
         </button>
       </li>
-      <li class="edit-mode-wrapper">
-        <input type="checkbox"><label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task">
-        <button class="edit">Save</button>
-        <button class="delete">
-          <img src="./remove.svg">
+      <li class="task-list--item task-list--item__edit">
+        <input type="checkbox" class="wrapper-actions--checkbox">
+        <label class="wrapper-actions--label wrapper-actions--item">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="wrapper-actions--input wrapper-actions--item">
+        <button class="button button__edit">Save</button>
+        <button class="button button__delete">
+          <img class="button--img" src="./remove.svg">
         </button>
       </li>
     </ul>
-    <h3>Completed</h3>
-    <ul id="completed-tasks">
-      <li>
-        <input type="checkbox" checked><label class="task">See the Doctor</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
-          <img src="./remove.svg">
+    <h3 class="tasks-header">Completed</h3>
+    <ul id="completed-tasks" class="task-list task-list__completed">
+      <li class="task-list--item">
+        <input class="wrapper-actions--checkbox" type="checkbox" checked>
+        <label class="wrapper-actions--label wrapper-actions--item">See the Doctor</label>
+        <input type="text" class="wrapper-actions--input wrapper-actions--item">
+        <button class="button button__edit">Edit</button>
+        <button class="button button__delete">
+          <img class="button--img" src="./remove.svg">
         </button>
       </li>
     </ul>
