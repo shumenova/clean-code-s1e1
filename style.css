@@ -116,7 +116,7 @@ button:hover {
   width: 226px;
 }
 .task-list--item > .wrapper-actions--input {
-  width: 226px
+  width: 226px;
 }
 .button__delete .button--img {
   height: 2em;
@@ -129,18 +129,18 @@ button:hover {
 
 /* Completed */
 .task-list__completed .wrapper-actions--label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .task-list .task-list--item .wrapper-actions--input {
-  display: none
+  display: none;
 }
 
 .task-list .task-list--item__edit .wrapper-actions--input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .task-list .task-list--item__edit .wrapper-actions--label {
